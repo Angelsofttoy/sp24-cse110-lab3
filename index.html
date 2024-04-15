@@ -9,8 +9,8 @@
     <meta name="keywords" content="HTML, Webbuild">
     <meta name="author" content="Angel(Yingjie) Ren">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/png" href="/screenshots/Panda Coding Express.png">
-    <meta http-equiv="refresh" content="30">
+    <link rel="icon" type="image/png" href="/media/Panda Coding Express.png">
+    <meta http-equiv="refresh" content="120">
 
   </head>
   <body>
@@ -24,6 +24,8 @@
                 <li><a href="#unresolvedtask">Unresolved Task</a></li>
                 <li><a href="#incomingtask">Incoming Task</a></li>
                 <li><a href="#groupconcern">Group Concerns</a></li>
+                <li><a href="#meetaudio">Meeting Audio Record</a></li>
+                <li><a href="#meetvideo">Meeting Video Record</a></li>
             </ul>
         </nav>
         <hr />
@@ -44,13 +46,22 @@
 
     <main>
        
-        <h3>
-            Ice Breaker
-        </h3>
-        <h4>Skribbi</h4>
-             <p>
-                Designed personal avatar, and guessed each other's art masterpiece. 
-             </p>
+        <label for="icebreaker">Icebreaker - Skribbi</label>
+    </br>
+        <textarea id="event" name="event" rows="5" cols="20">
+We made personalized avatars and guessed each other's masterpiece.
+        </textarea>
+    
+    </br>
+    </br>
+    
+        <label for="icebreaker-select">Icebreaker Event for Next Meeting</label>
+        <select name="icebreakers" id="icebreaker-select">
+            <option value="">--Your Preference?--</option>
+            <option value="amongus">Among us</option>
+            <option value="ittakestwo">It Takes Two</option>
+            <option value="overcooked2">Overcooked2</option>
+        </select>
 
         <section>
         <h3 id="agenda">
@@ -73,9 +84,14 @@
             Unresolved Tasks
         </h3>
             <p>
-                Unidentified major bug in website.html, causing github errors:
+                <b>Unidentified major bug</b> in website.html, causing github errors:
             </br>
-                - The reported bug is located at line 65, and needs further examination.
+                - The reported bug is located at <b>line 65</b>, and needs further examination.
+                <details>
+                    <summary>Error Message</summary>
+                    <401 Unauthorized>
+                </details>
+                  
             </p>
         </section>
 
@@ -90,10 +106,24 @@
             </br>
                 -Logo Design: Panda Coding Express
 
-                <img src="/screenshots/Panda Coding Express.png"
+                <img src="/media/Panda Coding Express.png"
                 width="400">
             </br>
                 3. Delegate individual front/back end tasks in writing code for "About Us" "Contact" Web Feature.
+            </br>
+                4. Decide next meeting date.
+                <form>
+                    <fieldset>
+                        <legend>Choose you Availability</legend>
+                        <input type="radio" id="2024.3.1" name="date" value="MarchFirst" />
+                        <label for="2024.3.1">2024.3.1</label>
+                        <input type="radio" id="2024.3.2" name="date" value="MarchSecond" />
+                        <label for="2024.3.2">2024.3.2</label>
+                        <input type="radio" id="2024.3.3" name="date" value="MarchThird" />
+                        <label for="2024.3.3">2024.3.3</label>
+                    </fieldset>
+                </form>
+        </p>
             </p>
         </section>
 
@@ -102,22 +132,60 @@
             Group Concerns
         </h3>
             <p>
-                The code is ambiguous and is missing major comments.
+                1.The code is <b>ambiguous</b> and is missing <b>major comments</b>.
             </br>
-                Majority of Github push was done without notifying the team.  
+                2.<strong>Majority of Github push was done without notifying the team.</strong>  
             </br>
-                Hard to arrange in-person collaborative time.
+                3.Hard to arrange in-person collaborative time.
+            </br>
+            </br>
+                4.Survey for personal help:
+            </br>
+             </br>
+                <label for="help-needed">----If you need help on your part, how much help would you need?----</label>
+                <input list="help-type" id="help-needed" name="help-needed" />
+
+                <datalist id="help-type">
+                    <option value="Minor/Major Bug Issues"></option>
+                    <option value="Structural Issues"></option>
+                    <option value="Clueless"></option>
+                </datalist>
             </p>
+        </section>
+
+        <section>
+            <h3 id="meetaudio">
+                Meeting Audio Record
+            </h3>
+
+            <figure>
+                <figcaption>Listen to meeting note music:</figcaption>
+                <audio controls src="/media/love u 2.mp3"></audio>
+              </figure>
+        </section>
+
+        <section>
+            <h3 id="meetvideo">
+                Meeting Video Record</h3>
+        <video controls width = "500">
+            <source src="/media/sea.mp4" type="video/mp4" />
+        </video>
         </section>
     </main>
 
+    <hr />
+
     <footer>
-        <h5 id="Subscribe">Subscribe to Meeting Notes Update</h5>
+        <h5 id="Subscribe"><em>Subscribe to Meeting Notes Update</em></h5>
 
         <form>
-            <input type="text" placeholder = "Enter Email Address" />
-
-            <button>Submit</button>
+            <input type="text" placeholder = "Email Address" />
+            <br />
+            <br />
+            <input type="text" placeholder = "Name" />
+            <br />
+            <br />
+            <button>Subscribe</button>
         </form>
 
         <br />
