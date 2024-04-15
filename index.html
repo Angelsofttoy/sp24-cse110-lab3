@@ -4,19 +4,44 @@
 <html lang="en">
   <head>
     <title>Panda Coding Express Group Meets</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Attempt in HTML Website Build">
+    <meta name="keywords" content="HTML, Webbuild">
+    <meta name="author" content="Angel(Yingjie) Ren">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="/screenshots/Panda Coding Express.png">
+    <meta http-equiv="refresh" content="30">
+
   </head>
   <body>
+    <header>
+        <div>Menu</div>
+
+        <nav>
+            <ul>
+                <li><a href="#attendance">Attendance List</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#unresolvedtask">Unresolved Task</a></li>
+                <li><a href="#incomingtask">Incoming Task</a></li>
+                <li><a href="#groupconcern">Group Concerns</a></li>
+            </ul>
+        </nav>
+        <hr />
+
     <h1>Meeting Notes</h1>
     <h2>2024.2.30</h2>
-    <h2> Attendance List</h2>
+
+    <h2 id="attendance"> Attendance List</h2>
     <ol>
         <li><Input type="checkbox" /> Amy</li>
-        <li><Input type="checkbox" /> Bri</li>
-        <li><Input type="checkbox" /> Cam</li>
-        <li><Input type="checkbox" /> Dee</li>
-        <li><Input type="checkbox" /> Emi</li>
-        <li><Input type="checkbox" /> Fre</li>
-     </ol>
+            <li><Input type="checkbox" /> Bri</li>
+            <li><Input type="checkbox" /> Cam</li>
+            <li><Input type="checkbox" /> Dee</li>
+            <li><Input type="checkbox" /> Emi</li>
+            <li><Input type="checkbox" /> Fre</li>
+    </ol>
+
+
     <main>
        
         <h3>
@@ -27,31 +52,77 @@
                 Designed personal avatar, and guessed each other's art masterpiece. 
              </p>
 
-        <h3>
+        <section>
+        <h3 id="agenda">
             Agenda
         </h3>
             <p>
             Progress Report
             <br>
-            Check on Exisiting Problem
+            Existing Unresolved Task
             <br>
             Collaborative Problem Fixing Session
             <br>
             Future Tasks Delegation
             <br>
              </p>
-        <h3>
-            Progress Report
+        </section>
 
+        <section>
+        <h3 id="unresolvedtask">
+            Unresolved Tasks
         </h3>
+            <p>
+                Unidentified major bug in website.html, causing github errors:
+            </br>
+                - The reported bug is located at line 65, and needs further examination.
+            </p>
+        </section>
 
-        <h3>
+        <section>
+        <h3 id="incomingtask">
             Incoming Tasks
         </h3>
+            <p>
+                1. Fix line 65 bug. 
+            </br>
+                2. Discuss Possible Visual Improvements on Website's UI and layout.
+            </br>
+                -Logo Design: Panda Coding Express
 
-        <h3>
-            Summary
+                <img src="/screenshots/Panda Coding Express.png"
+                width="400">
+            </br>
+                3. Delegate individual front/back end tasks in writing code for "About Us" "Contact" Web Feature.
+            </p>
+        </section>
+
+        <section>
+        <h3 id="groupconcern">
+            Group Concerns
         </h3>
+            <p>
+                The code is ambiguous and is missing major comments.
+            </br>
+                Majority of Github push was done without notifying the team.  
+            </br>
+                Hard to arrange in-person collaborative time.
+            </p>
+        </section>
     </main>
+
+    <footer>
+        <h5 id="Subscribe">Subscribe to Meeting Notes Update</h5>
+
+        <form>
+            <input type="text" placeholder = "Enter Email Address" />
+
+            <button>Submit</button>
+        </form>
+
+        <br />
+        <div>&copy;Team 5: Panda Coding Express </div>
+
+    </footer>
   </body>
 </html>
