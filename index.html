@@ -16,10 +16,12 @@
     <main>
     <style>
         .box{
-            background-color: #8ba0e4
+            background-color: #6e8beb
         }
+
+
         body {
-         background-color: #c3d6f8;
+            background-color: #c3d6f8;
         }
 
         h1{
@@ -34,14 +36,51 @@
             color: #f2e4fb
         }
 
-        h4{
-
+        .wrapper{
+            font-size: 1.4em;
+            color: #1a2d6c
         }
+
+
+        .wrapper2{
+            font-size: 3vw;
+            color: #1a2d6c
+        }
+
+        .px{
+            font-size: 40px;
+            height: 90px;
+            width: 20px;
+            color: #f4e3ff
+        }
+
+        .vw{
+            height: 8vh;
+            width: 50vw;
+            color: #d4e4ff
+        }
+
+        .cm{
+            font-size: 0.3cm;
+            width: 10cm;
+            color:#56116f
+        }
+
+        .pc{
+            font-size: 0.7pc;
+            color:#56116f
+        }
+
+        .em{
+            width: 20em;
+            color: #f2e4fb
+        }
+
     </style>
 
     <header>
-        <div class = "box">
-            <h3>Menu</h3>
+        <div class = "wrapper">
+            <div class = "box em">Menu</div>
         </div>
 
         <nav>
@@ -58,10 +97,12 @@
         <hr />
     </header>
     
-    <h1>Meeting Notes</h1>
-    <h4>2024.2.30</h4>
+    <div class = "wrapper"><div class = "box px"><em><b>Meeting Notes</b></em></div></div>
+    <div class = "wrapper"><div class = "cm">2024.2.30</div></div>
+    <div class = "wrapper"><div class = "pc">Wednesday</div></div>
+    
+    <em><h1 id="attendance"> Attendance List</h1></em>
 
-    <h2 id="attendance"> Attendance List</h2>
     <ol>
         <li><Input type="checkbox" /> Amy</li>
             <li><Input type="checkbox" /> Bri</li>
@@ -198,7 +239,7 @@
     <hr />
 
     <footer>
-        <h5 id="Subscribe"><em>Subscribe to Meeting Notes Update</em></h5>
+        <div class="wrapper2"><div class = "box vw">Subscribe to Meeting Notes Update</em></div></div>
 
         <form>
             <input type="text" placeholder = "lab3Email Address" />
