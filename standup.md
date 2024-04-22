@@ -1,1 +1,1 @@
-## Stand-UP MD
+## Stand-UP
