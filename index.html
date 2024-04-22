@@ -14,9 +14,35 @@
 
   </head>
     <main>
-    
+    <style>
+        .box{
+            background-color: #8ba0e4
+        }
+        body {
+         background-color: #c3d6f8;
+        }
+
+        h1{
+            color: #557af5
+        }
+
+        h2 {
+            color: #f2e4fb
+        }
+
+        h3{
+            color: #f2e4fb
+        }
+
+        h4{
+
+        }
+    </style>
+
     <header>
-        <div>Menu</div>
+        <div class = "box">
+            <h3>Menu</h3>
+        </div>
 
         <nav>
             <ul>
@@ -33,7 +59,7 @@
     </header>
     
     <h1>Meeting Notes</h1>
-    <h2>2024.2.30</h2>
+    <h4>2024.2.30</h4>
 
     <h2 id="attendance"> Attendance List</h2>
     <ol>
@@ -59,9 +85,12 @@
         </select>
 
         <section>
-        <h3 id="agenda">
-            Agenda
-        </h3>
+        <div class = "box">
+            <h3 id="agenda">
+                <em>Agenda</em>
+            </h3>
+        </div>
+
             <p>
             Progress Report<br>
             Existing Unresolved Task<br>
@@ -71,9 +100,11 @@
         </section>
 
         <section>
-        <h3 id="unresolvedtask">
-            Unresolved Tasks
-        </h3>
+        <div class = "box">    
+            <h3 id="unresolvedtask">
+               <em>Unresolved Tasks</em>
+            </h3>
+        </div>
             <p>
                 <b>Unidentified major bug</b> in website.html, causing github errors:<br>
                 - The reported bug is located at <b>line 65</b>, and needs further examination.
@@ -87,9 +118,11 @@
         </section>
 
         <section>
-            <h3 id="incomingtask">
-                Incoming Tasks
-            </h3>
+            <div class = "box">   
+                <h3 id="incomingtask">
+                    <em>Incoming Tasks</em>
+                </h3>
+            </div>
 
             
                 1. Fix line 65 bug. <br>
@@ -117,9 +150,11 @@
         </section>
 
         <section>
-        <h3 id="groupconcern">
-            Group Concerns
-        </h3>
+        <div class = "box">   
+            <h3 id="groupconcern">
+                <em>Group Concerns</em>
+            </h3>
+        </div>
             <p>
                 1.The code is <b>ambiguous</b> and is missing <b>major comments</b>.<br>
                 2.<strong>Majority of Github push was done without notifying the team.</strong><br>
@@ -137,9 +172,11 @@
         </section>
 
         <section>
-            <h3 id="meetaudio">
-                Meeting Audio Record
-            </h3>
+            <div class = "box"> 
+                <h3 id="meetaudio">
+                    <em>Meeting Audio Record</em>
+                </h3>
+            </div>
 
             <figure>
                 <figcaption>Listen to meeting note music:</figcaption>
@@ -148,8 +185,10 @@
         </section>
 
         <section>
-            <h3 id="meetvideo">
-                Meeting Video Record</h3>
+            <div class = "box"> 
+                <h3 id="meetvideo">
+                    <em>Meeting Video Record</em></h3>
+            </div>
             <video controls width = "500">
             <source src="./media/sea.mp4" type="video/mp4" />
             </video>
