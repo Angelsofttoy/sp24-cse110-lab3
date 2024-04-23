@@ -16,7 +16,19 @@
     <main>
     <style>
         .box{
-            background-color: #6e8beb
+            
+            background-color: #6e8beb;
+        }
+
+        .box2{
+            margin-top: -40px;
+            margin-right: 30px;
+            margin-bottom: 40px;
+            margin-left: 5em;
+        }
+
+        .boxIB{
+            margin: 0.3cm 0.15cm 0.1cm 0.05cm;
         }
 
 
@@ -33,6 +45,9 @@
         }
 
         h3{
+            border: 0.5px solid #304ba3;
+            border-bottom-right-radius: 10em;
+            margin: auto;
             color: #f2e4fb
         }
 
@@ -48,6 +63,7 @@
         }
 
         .px{
+         
             font-size: 40px;
             height: 90px;
             width: 20px;
@@ -72,15 +88,30 @@
         }
 
         .em{
-            width: 20em;
+            margin: auto;
+            width: 22em;
             color: #f2e4fb
+        }
+
+        .block,
+        li{
+            padding: 0.1em 0.4em 0.1em 0.8em;
+            font-size:0.8em;
+        }
+
+        p,
+        ul{
+            padding-top: 0.1em;
+            padding-right: 0.1em;
+            padding-left: 1em;
+            padding-bottom: 0.1em;
         }
 
     </style>
 
     <header>
         <div class = "wrapper">
-            <div class = "box em">Menu</div>
+            <div class = "box em"><b>Menu</b></div>
         </div>
 
         <nav>
@@ -104,7 +135,7 @@
     <em><h1 id="attendance"> Attendance List</h1></em>
 
     <ol>
-        <li><Input type="checkbox" /> Amy</li>
+            <li><Input type="checkbox" /> Amy</li>
             <li><Input type="checkbox" /> Bri</li>
             <li><Input type="checkbox" /> Cam</li>
             <li><Input type="checkbox" /> Dee</li>
@@ -112,12 +143,12 @@
             <li><Input type="checkbox" /> Fre</li>
     </ol>
 
-        <label for="icebreaker">Icebreaker - Skribbi</label><br>
+    <div class="container"><div class="boxIB"><label for="icebreaker"><b>Icebreaker - Skribbi</b></label><br></div></div>
         <textarea id="icebreaker" name="icebreaker" rows="5" cols="20">
                         We made personalized avatars and guessed each other's art masterpiece.
         </textarea><br><br>
     
-        <label for="icebreaker-select">Icebreaker Event for Next Meeting</label>
+       <label for="icebreaker-select">Icebreaker Event for Next Meeting</label>
         <select name="icebreakers" id="icebreaker-select">
             <option value="">--Your Preference?--</option>
             <option value="amongus">Among us</option>
@@ -252,7 +283,7 @@
         </form>
 
         <br>
-        <div>&copy;Team 5: Panda Coding Express </div>
+        <div class="container"><div class="box2"><div>&copy;Team 5: Panda Coding Express </div></div></div>
     </footer>
 
   
