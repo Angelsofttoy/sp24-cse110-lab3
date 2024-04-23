@@ -51,7 +51,7 @@
 
         h3{
             text-align: left;
-            border: 0.5px solid #304ba3;
+            border: 0.5px solid #526ab8;
             border-bottom-right-radius: 10em;
             margin: auto;
             color: #f2e4fb
@@ -132,6 +132,29 @@
             display: block;
             margin: 0;
             padding-bottom: 0em;
+        }
+
+        div.static {
+            position: static;
+            border: 3px solid #3c62d5;
+        }
+
+        div.relative {
+            position: relative;
+            border: 1px solid #7b5ed9;
+        }
+
+        button{
+            color: #3c62d5;
+            background-color: #9daee5;
+        }
+
+        button:hover{
+            background-color: #f2e4fb
+        }
+        
+        button:active{
+            box-shadow: 2px 2px 5px #086bb7;
         }
     </style>
 
@@ -251,10 +274,11 @@
 
         <section>
         <div class = "box">   
-            <h3 id="groupconcern">
+            <div class="relative"><h3 id="groupconcern">
                 <em>Group Concerns</em>
-            </h3>
+            </h3></div> 
         </div>
+         
             <p>
                 1.The code is <b>ambiguous</b> and is missing <b>major comments</b>.<br>
                 2.<strong>Majority of Github push was done without notifying the team.</strong><br>
@@ -298,7 +322,7 @@
     <hr />
 
     <footer>
-        <div class="wrapper2"><div class = "box vw">Subscribe to Meeting Notes Update</em></div></div>
+        <div class="static"></div><div class="wrapper2"><div class = "box vw">Subscribe to Meeting Notes Update</em></div></div></div>
 
         <form>
             <input type="text" placeholder = "lab3Email Address" />
