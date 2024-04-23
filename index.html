@@ -13,14 +13,22 @@
     <meta http-equiv="refresh" content="120">
 
   </head>
+    <link href="https://fonts.googleapis.com/css2?family=Jersey+10&display=swap" rel="stylesheet" type="text/css">
     <main>
     <style>
+
+        .jersey-10-regular {
+        font-family: "Jersey 10", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        }
+
         .box{
             
             background-color: #6e8beb;
            
             max-height: 3em;
-            max-width: 60em;
+            max-width: 150em;
         }
 
         .box2{
@@ -50,6 +58,9 @@
         }
 
         h3{
+            font-family: "Jersey 10", sans-serif;
+            font-weight: 400;
+            font-style: normal;
             text-align: left;
             border: 0.5px solid #526ab8;
             border-bottom-right-radius: 10em;
@@ -109,6 +120,7 @@
 
         p,
         ul{
+            text-align:middle;
             padding-top: 0.1em;
             padding-right: 0.1em;
             padding-left: 1em;
@@ -156,15 +168,77 @@
         button:active{
             box-shadow: 2px 2px 5px #086bb7;
         }
+
+        .navigation {
+            display: flex;
+            flex-flow: row wrap;
+            flex-grow: 2;
+            justify-content: center;
+            list-style: none;
+            margin: 0; 
+            background: #78a7e4;
+        }
+
+        .navigation a {
+            text-align: middle;
+            text-decoration: none;
+            display: block;
+            padding: 1em;
+            color: white;
+         }
+
+         .navigation a:hover {
+            background-color: #dabde9;
+         }
+
+
+        @media all and (max-width: 800px) {
+            .navigation {
+               
+            justify-content: space-around;
+            }
+        }
+
+         @media all and (max-width: 600px) {
+            .navigation {
+                flex-direction: column;
+                padding:0;
+            }
+            
+            .navigation a { 
+                text-align: center; 
+                font-size: 15px;
+                padding: 10px;
+                border-top: 1px solid rgb(161, 230, 244); 
+            }
+        }
+
+        .grid{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            grid-gap: 1rem;
+        }
+
+        .grid > div{
+            background: #78a7e4;
+            padding: 1rem;
+            border-radius: 1rem;
+        }
+
+        body{
+            margin: 2rem;
+            font: 12px system-ui;
+        }
+        
     </style>
 
     <header>
         <div class = "wrapper">
-            <div class = "box em"><b>Menu</b></div>
+            <div class = "box em"><b>CSE110</b></div>
         </div>
 
         <nav>
-            <ul>
+            <ul class = "navigation">
                 <li><a href="#attendance">Attendance List</a></li>
                 <li><a href="#agenda">Agenda</a></li>
                 <li><a href="#unresolvedtask">Unresolved Task</a></li>
@@ -207,7 +281,7 @@
 
         <section>
         <div class = "box">
-            <h3 id="agenda">
+            <h3 class = jersey-10-regular id="agenda">
                 <em>Agenda</em>
             </h3>
         </div>
@@ -231,8 +305,13 @@
                 - The reported bug is located at <b>line 65</b>, and needs further examination.
             </p>  
                 <details>
-                    <summary>Error Message</summary>
-                    401 Unauthorized
+                    <summary>Error Message #1</summary>
+                        <div class="grid"><div>401 Unauthorized</div></div>
+                </details>
+
+                <details>
+                    <summary>Error Message #2</summary>
+                        <div class="grid"><div>408 Request Time Out</div></div>
                 </details>
                   
             
