@@ -23,6 +23,13 @@
         font-style: normal;
         }
 
+        .colorpalette{
+            color: #3c62d5;
+            color: #6e8beb;
+            color:rgb(176, 93, 176);
+            color: rgb(232, 194, 249);
+            color: #f2e4fb;
+        }
         .box{
             
             background-color: #6e8beb;
@@ -37,6 +44,7 @@
             margin-right: 30px;
             margin-bottom: 40px;
             margin-left: 0em;
+            
         }
 
         .boxIB{
@@ -92,23 +100,30 @@
 
 
         .wrapper2{
-            font-size: 2vw;
-            color: #1a2d6c
+            background-color:#78a7e4;
         }
 
         .px{
          
-            font-size: 40px;
-            height: 90px;
-            width: 20px;
-          
-            color: #f4e3ff
+            font-size: 20px;
+            max-height: 20px;
+            max-width: 1000px;
+            color: #f4e3ff;
+            
+            margin: 20px;
         }
 
         .vw{
-            height: 4vh;
-            width: 40vw;
-            color: #d4e4ff
+            font-size: 5vw;
+            max-height: 30px;
+            max-width: 1200px;
+            margin-bottom: 3vw;
+            color: #f4e3ff;
+            text-shadow:
+                1px 1px 0 rgb(194, 127, 211),
+                -1px 1px 0 rgb(194, 127, 211),
+                -1px -1px 0 rgb(194, 127, 211),
+                1px -1px 0 rgb(194, 127, 211);
         }
 
         .cm{
@@ -124,7 +139,8 @@
 
         .em{
             text-align: center;
-            height:50em;
+            font-family:'Courier New', Courier, monospace;
+            font-size: 3em;
             margin: auto;
             color: #f2e4fb
         }
@@ -137,7 +153,6 @@
 
         p,
         ul{
-            text-align: center;
             padding-top: 0.1em;
             padding-right: 0.1em;
             padding-left: 1em;
@@ -174,7 +189,7 @@
 
         div.static {
             position: static;
-            border: 3px solid #3c62d5;
+            border: 3px dashed #f9e6fb;
         }
 
         div.relative {
@@ -236,11 +251,17 @@
                 font-size: 15px;
                 padding: 10px;
                 border-top: 1px solid rgb(161, 230, 244); 
+
+                
             }
         }
 
         ul > li {
             border-top: 3px solid rgb(250, 224, 250); 
+            border-right: 3px solid #4f6ed6;
+            border-left: 3px solid #a9cfff;
+            border-bottom: 3px solid #608fcb;
+            
         }
 
         p.highlight{
@@ -291,10 +312,11 @@
         }
 
             label {
-
-            font-family: system-ui;
-            font-size: 1.25rem;
+            /* styles for label */
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 0.5 rem;
                 & input {
+                    /* styles for input in a label  */
                     border: purple 1px dashed;
                 }
             }
@@ -320,7 +342,7 @@
         <hr />
     </header>
     
-    <div class = "wrapper"><div class = "box px"><em><b>Meeting Notes</b></em></div></div>
+    <div class = "wrapper"><div class = "box vw"><em><b>Meeting Notes</b></em></div></div>
     <div class = "wrapper"><div class = "cm">2024.2.30</div></div>
     <div class = "wrapper"><div class = "pc">Wednesday</div></div>
     
@@ -429,7 +451,7 @@
          
             <p id="identified">
                 1.The code is <b>ambiguous</b> and is missing <b>major comments</b>.<br>
-                2.<strong>Majority of Github push was done without notifying the team.</strong><br>
+                2.<strong>Majority of Github push was done without notifying the team, comment or linking to an existing issue.</strong><br>
                 3.Hard to arrange in-person collaborative time.<br><br>
                 4.Survey for personal help:<br>
                 <label for="help-needed">----If you need help on your part, how much help would you need?----</label>
@@ -471,7 +493,7 @@
     <hr />
 
     <footer>
-        <div class="static"><div class="wrapper2"><div class = "vw"><em>Subscribe to Meeting Notes Update</em></div></div></div>
+        <div class="static"><div class="wrapper2"><div class = "px"><em>Subscribe to Meeting Notes Update</em></div></div></div>
         <form>
             <input type="text" placeholder = "lab3Email Address" />
         <br>
